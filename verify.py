@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verification for graph817.json.
+"""Verification for the graph JSON in this repository.
 
 Checks, in exact integer arithmetic over Q(zeta_21):
   1. every listed edge has squared length exactly 1;
@@ -12,7 +12,7 @@ With --cnf FILE it also writes a 4-colourability CNF (one-hot encoding,
 one triangle pinned for symmetry breaking); any SAT solver reports it
 UNSATISFIABLE, hence chromatic number 5.
 
-Usage: python3 verify.py graph817.json [--cnf four.cnf]
+Usage: python3 verify.py graph801.json [--cnf four.cnf]
 """
 import json
 import sys
