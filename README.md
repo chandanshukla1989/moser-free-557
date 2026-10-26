@@ -1,0 +1,24 @@
+# moser-free-817
+
+A unit-distance graph in the plane with **817 vertices**, **4298 edges**,
+**chromatic number 5**, and **no Moser spindle** as a subgraph.
+
+Coordinates are exact elements of Q(zeta_21): each point is
+`(sum_{k=0}^{11} a_k zeta_21^k) / 7` with the integer vector `a` given in
+`graph817.json` (`exact_coordinates`). Float coordinates are included for
+convenience only; all verification is exact.
+
+## Verify
+
+    python3 verify.py graph817.json
+
+Checks in exact integer arithmetic: every listed edge has squared length
+exactly 1, no other pair does, the graph contains no Moser spindle, and the
+included 5-colouring is proper.
+
+    python3 verify.py graph817.json --cnf four.cnf
+    kissat four.cnf          # reports UNSATISFIABLE
+    kissat four.cnf proof.drat && drat-trim four.cnf proof.drat   # s VERIFIED
+
+UNSAT of `four.cnf` means no proper 4-colouring exists, so the chromatic
+number is exactly 5.
