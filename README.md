@@ -1,5 +1,9 @@
 # moser-free-791
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23686997.svg)](https://doi.org/10.5281/zenodo.23686997)
+
+Archived at Zenodo: https://doi.org/10.5281/zenodo.23686997 (concept DOI for all versions: 10.5281/zenodo.23686996)
+
 A unit-distance graph in the plane with **791 vertices**, **4180 edges**,
 **chromatic number 5**, and **no Moser spindle** as a subgraph.
 
