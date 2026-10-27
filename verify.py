@@ -12,7 +12,7 @@ With --cnf FILE it also writes a 4-colourability CNF (one-hot encoding,
 one triangle pinned for symmetry breaking); any SAT solver reports it
 UNSATISFIABLE, hence chromatic number 5.
 
-Usage: python3 verify.py graph792.json [--cnf four.cnf]
+Usage: python3 verify.py graph791.json [--cnf four.cnf]
 """
 import json
 import sys
