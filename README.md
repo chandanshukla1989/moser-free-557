@@ -16,19 +16,15 @@ points can contain one; `verify.py` also checks this directly.
 
 ## Credit and provenance
 
-This graph is a reduction of the construction of **Sergi Galán**
+The 126 unit directions used here are those of **Sergi Galán's**
+852-vertex Moser-spindle-free 5-chromatic graph
 ([decalion89/chromatic-number-of-the-plane](https://github.com/decalion89/chromatic-number-of-the-plane),
-`data/flat852`, 29 September 2026): an 852-vertex Moser-spindle-free
-5-chromatic unit-distance graph in the same field Q(zeta_21), with the same
-`/7` coordinates and the same 126 unit directions, built from
-**J. K. Haugland's** heptagon lattice (arXiv:2608.04542) and its mirror
-image. 504 of the 557 vertices here are vertices of Galán's `core852a.json`
-(same frame); the rest come from the same point family.
-
-Our contribution is the reduction from 852 to 557 vertices: SAT-verified
-vertex elimination (kissat) with batched removals, colouring-guided repair
-batches, and combination of independent branches. Every intermediate record
-was certified not 4-colourable.
+`data/flat852`, September 2026), which come from **J. K. Haugland's**
+heptagon lattice (arXiv:2608.04542) and its mirror image. We took this
+direction set from Galán's work, built our own 2967-vertex configuration with
+it, and reduced that to 557 vertices by SAT-verified vertex elimination
+(kissat; single and batched removals, combination of independent branches).
+Both graphs live in the same lattice, so many points coincide.
 
 ## Verify
 
