@@ -16,15 +16,16 @@ points can contain one; `verify.py` also checks this directly.
 
 ## Credit and provenance
 
-The 126 unit directions used here are those of **Sergi Galán's**
+The 126 unit directions used here are the same as in **Sergi Galán's**
 852-vertex Moser-spindle-free 5-chromatic graph
 ([decalion89/chromatic-number-of-the-plane](https://github.com/decalion89/chromatic-number-of-the-plane),
 `data/flat852`, September 2026), which come from **J. K. Haugland's**
-heptagon lattice (arXiv:2608.04542) and its mirror image. We took this
-direction set from Galán's work, built our own 2967-vertex configuration with
-it, and reduced that to 557 vertices by SAT-verified vertex elimination
-(kissat; single and batched removals, combination of independent branches).
-Both graphs live in the same lattice, so many points coincide.
+heptagon lattice (arXiv:2608.04542) and its mirror image. Our configuration
+(2967 vertices) was built and reduced independently to 557 vertices by
+SAT-verified vertex elimination (kissat; single and batched removals,
+combination of independent branches). Both graphs live in the same lattice,
+so many points coincide. The smallest published spindle-free example has
+1441 vertices; Haugland's explicit example has 2131.
 
 ## Verify
 
